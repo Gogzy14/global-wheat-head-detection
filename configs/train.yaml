@@ -1,0 +1,10 @@
+# Reference settings for the baseline experiment.
+# The command-line options in src/train.py can override these values.
+model: yolo26n.pt
+epochs: 100
+imgsz: 640
+batch: 16
+seed: 42
+project: outputs/training
+name: baseline
+

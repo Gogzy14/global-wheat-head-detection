@@ -1,0 +1,9 @@
+ultralytics
+jupyterlab
+ipykernel
+pandas
+matplotlib
+seaborn
+PyYAML
+pytest
+
