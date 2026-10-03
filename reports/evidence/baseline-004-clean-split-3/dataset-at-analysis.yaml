@@ -1,5 +1,5 @@
 # Copy this file to dataset.local.yaml and replace the path below.
-path: C:/replace/with/path/to/GlobalWheat2020
+path: "C:/Users/Korisnik/Desktop/Yolo test/datasets/GlobalWheat2020"
 
 train:
   - images/arvalis_1
@@ -20,3 +20,4 @@ test:
 
 names:
   0: wheat_head
+

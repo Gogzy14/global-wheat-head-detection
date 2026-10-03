@@ -35,10 +35,10 @@ For a manually downloaded copy:
 2. Replace the example `path` with the dataset location on your computer.
 3. Do not commit `dataset.local.yaml`; it is ignored by Git.
 
-Important: the official configuration lists `ethz_1` in both training and
-validation. Treat those validation metrics as in-domain results and document
-the overlap. The geographic test subsets are better suited to measuring
-generalization to unseen regions.
+The local baseline and example configuration reserve `ethz_1` for validation;
+it is excluded from training. Earlier runs used an overlapping configuration
+and are not directly comparable. The geographic test subsets measure
+generalization to additional unseen regions.
 
 ## Typical workflow
 
@@ -86,3 +86,9 @@ For every important experiment, record the Git commit, model, image size,
 epochs, batch size, random seed, dataset split, metrics, and observations in
 `reports/experiments.md`.
 
+The `baseline-v1` checkpoint is documented in
+[`reports/baseline-v1-preservation.md`](reports/baseline-v1-preservation.md).
+It preserves the completed model before interface development. Exact installed
+package versions are in `requirements-baseline-v1.freeze.txt`; this Windows/CUDA
+environment inventory is not a portable deployment lockfile. Model weights and
+local backup archives are excluded from Git and must be transferred separately.

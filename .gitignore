@@ -17,8 +17,10 @@ data/*
 !data/README.md
 models/*
 !models/README.md
+!models/baseline-v1.manifest.json
 *.pt
 *.onnx
+backups/
 
 # Training and prediction outputs
 runs/
@@ -29,4 +31,3 @@ outputs/predictions/*
 .vscode/settings.json
 .DS_Store
 Thumbs.db
-

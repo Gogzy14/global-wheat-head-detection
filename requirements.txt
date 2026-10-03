@@ -1,9 +1,10 @@
-ultralytics
-jupyterlab
-ipykernel
-pandas
-matplotlib
-seaborn
-PyYAML
-pytest
-
+# Direct dependencies captured for baseline-v1 (Windows, Python 3.14.3).
+# Full installed environment: requirements-baseline-v1.freeze.txt.
+ultralytics==8.4.152
+jupyterlab==4.6.3
+ipykernel==7.3.0
+pandas==3.0.5
+matplotlib==3.11.2
+seaborn==0.13.2
+PyYAML==6.0.3
+pytest==9.1.1
