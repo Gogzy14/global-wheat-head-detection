@@ -1,0 +1,76 @@
+/* A compact, dark image workspace inspired by the Ultralytics Hugging Face demo. */
+.stMainBlockContainer {
+    max-width: 1240px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.wheat-header {
+    text-align: center;
+    padding: 0.5rem 0 1.5rem;
+}
+
+.eyebrow {
+    color: #9ca7be;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.wheat-header h1 {
+    font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 750;
+    letter-spacing: -0.035em;
+    padding: 0.4rem 0 0.35rem;
+}
+
+.wheat-header h1 span { color: #83a3ff; }
+.wheat-header p { color: #b4bac7; margin: 0 0 0.9rem; }
+.model-badges { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.45rem; }
+.model-badges span {
+    background: #20232b;
+    border: 1px solid #353944;
+    border-radius: 5px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.73rem;
+    color: #cbd2df;
+}
+.model-badges .local-badge { color: #9cdbb5; }
+
+.st-key-upload_panel, .st-key-result_panel,
+.st-key-settings_panel, .st-key-summary_panel {
+    background: #202227;
+}
+
+.empty-image {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.6rem;
+    color: #d2d7e1;
+}
+.empty-image strong { font-size: 0.95rem; font-weight: 500; }
+.empty-image span { font-size: 0.8rem; color: #a2aab9; }
+.image-symbol { color: #929bad; font-size: 2.5rem; line-height: 1.2; }
+
+.st-key-upload_panel [data-testid="stImage"] img,
+.st-key-result_panel [data-testid="stImage"] img {
+    height: 300px;
+    object-fit: contain;
+    background: #181a1e;
+    border-radius: 5px;
+}
+
+[data-testid="stBaseButton-primary"] { min-height: 2.8rem; font-weight: 600; }
+[data-testid="stMetricValue"] { font-size: 2rem; }
+
+@media (max-width: 640px) {
+    .stMainBlockContainer { padding-top: 1.5rem; }
+    .wheat-header { padding-bottom: 1rem; }
+    .empty-image { min-height: 220px; }
+    .st-key-upload_panel [data-testid="stImage"] img,
+    .st-key-result_panel [data-testid="stImage"] img { height: 220px; }
+}

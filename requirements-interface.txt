@@ -1,0 +1,4 @@
+# Add the local interface to the existing baseline-v1 environment.
+# Keep packages already recorded in the baseline at their saved versions.
+-c requirements-baseline-v1.freeze.txt
+streamlit==1.65.0
